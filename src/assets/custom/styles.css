@@ -1,0 +1,354 @@
+/**
+ * Bootstrap enhancements
+ **/
+.overflow-hidden {
+    overflow-y: hidden;
+}
+
+.overflow-x-visible {
+    overflow-x: visible;
+}
+
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
+
+.overflow-y-scroll {
+    overflow-y: scroll;
+}
+
+.bg-dark {
+    background-color: #000 !important;
+}
+
+.nav-dark {
+    background-color: #000 !important;
+}
+
+a.navbar-brand {
+    width: 6rem;
+}
+
+.navbar-toggler:hover {
+    border-color: rgba(255, 255, 255, .5);
+}
+
+.navbar-toggler:focus {
+    outline-style: none;
+    border-color: rgba(255, 255, 255, .5);
+}
+
+.footer-dark {
+    background-color: #000 !important;
+}
+
+/**
+ * Plyr.io modifications
+ **/
+
+/* Position audio controls above the footer */
+.plyr--audio .plyr__controls {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: 3rem;
+}
+
+/* Position video controls above the footer */
+.plyr--video .plyr__controls {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: 3rem;
+}
+
+/* Audio control colours */
+.plyr--audio .plyr__controls {
+    background: black;
+    color: white;
+}
+
+.plyr--audio .plyr__control.plyr__tab-focus,
+.plyr--audio .plyr__control:hover,
+.plyr--audio .plyr__control[aria-expanded=true] {
+    background: white;
+    color: black;
+}
+
+/* Video poster background color */
+.plyr__poster {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+/* Video control colours */
+.plyr--video .plyr__controls {
+    background: black;
+}
+
+.plyr__controls--fullscreen {
+    margin-bottom: 0 !important;
+}
+
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded=true] {
+    background: white;
+    color: black;
+}
+
+.plyr__control--overlaid {
+    background: black;
+    color: white;
+}
+
+.plyr__control--overlaid:focus,
+.plyr__control--overlaid:hover {
+    background: white;
+    color: black;
+}
+
+.plyr__control.plyr__tab-focus {
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, .5);
+    outline: 0;
+}
+
+.plyr--full-ui input[type=range].plyr__tab-focus::-webkit-slider-runnable-track {
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, .5);
+    outline: 0
+}
+
+.plyr--full-ui input[type=range].plyr__tab-focus::-moz-range-track {
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, .5);
+    outline: 0
+}
+
+.plyr--full-ui input[type=range].plyr__tab-focus::-ms-track {
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, .5);
+    outline: 0
+}
+
+
+/* Scroll bar colours */
+.plyr--full-ui input[type=range] {
+    color: white;
+}
+
+.plyr--full-ui.plyr--audio input[type=range]::-webkit-slider-runnable-track {
+    background-color: rgba(255, 255, 255, .25);
+}
+
+.plyr--full-ui.plyr--audio input[type=range]::-moz-range-track {
+    background-color: rgba(255, 255, 255, .25);
+}
+
+.plyr--full-ui.plyr--audio input[type=range]::-ms-track {
+    background-color: rgba(255, 255, 255, .25);
+}
+
+.plyr--full-ui.plyr--video input[type=range]::-webkit-slider-runnable-track {
+    background-color: rgba(255, 255, 255, .25);
+}
+
+.plyr--full-ui.plyr--video input[type=range]::-moz-range-track {
+    background-color: rgba(255, 255, 255, .25);
+}
+
+.plyr--full-ui.plyr--video input[type=range]::-ms-track {
+    background-color: rgba(255, 255, 255, .25);
+}
+
+/* Menu colours */
+.plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
+    background: black;
+}
+
+/**
+ * Other
+ */
+.bg-opaque-2 {
+    background-color: rgba(248, 249, 250, 0.9);
+}
+
+/**
+ * Full screen background image with overlay.
+ **/
+.page-background-image {
+    background-attachment: fixed;
+    background-image: url(../images/background.jpg);
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 100vh;
+    z-index: -2;
+}
+
+.page-background-image>.page-background-opacity {
+    background-color: black;
+    opacity: 0.4;
+    height: 100vh;
+    z-index: -1;
+}
+
+main {
+    position: fixed;
+    top: 0;
+}
+
+/**
+ * Typography
+ **/
+body {
+    font-size: 0.8rem;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+}
+
+.lead {
+    font-size: 1rem;
+}
+
+.form-control {
+    font-size: 0.8rem;
+}
+
+/**
+ * Images
+ **/
+.img-brand-footer {
+    width: 50%;
+}
+
+/**
+ * Footer
+ **/
+.footer a {
+    font-weight: bold;
+}
+
+.footer-content-brand {
+    width: 65%;
+}
+
+/**
+ * Search box
+ **/
+.has-clear {
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.form-control-icon {
+    line-height: 2.25rem;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+}
+
+input[type="text"] {
+    background-color: inherit;
+}
+
+input[type="text"]:focus {
+    outline: 0;
+    box-shadow: none;
+    background-color: inherit;
+}
+
+/*  Add the outline glow to the search box group */
+.form-group-glow {
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset, 0 0 8px rgba(153, 153, 153, 0.6);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset, 0 0 8px rgba(153, 153, 153, 0.6);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .075) inset, 0 0 8px rgba(153, 153, 153, 0.6);
+}
+
+::-ms-clear {
+    display: none;
+}
+
+/**
+ * Tracklist
+ **/
+
+/* Tracklist scrolling */
+.tracklist-scroll {
+    overflow-y: scroll;
+}
+
+/* Track */
+.track-row:hover {
+    background: rgb(40, 40, 40);
+    color: white;
+}
+
+.track-row-odd {
+    background: rgb(187, 187, 187);
+}
+
+.track-row-even {
+    background: rgb(209, 209, 209);
+}
+
+.track-row-selected {
+    background: rgb(40, 40, 40);
+    color: white;
+}
+
+.track__number {
+    width: 1rem;
+}
+
+@media only screen and (min-width: 573px) {
+    .footer-content-brand {
+        width: inherit;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    a.navbar-brand {
+        width: inherit;
+    }
+
+    .img-brand {
+        width: 60%;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    .display-4 {
+        font-size: 3.5rem;
+    }
+
+    .lead {
+        font-size: 1.25rem;
+    }
+
+    .form-control {
+        font-size: 1rem;
+    }
+
+    .form-control-icon {
+        line-height: 2.375rem;
+        height: 2.5rem;
+    }
+
+    /* Position audio controls above the footer */
+    .plyr--audio .plyr__controls {
+        margin-bottom: 4rem;
+    }
+
+    /* Position video controls above the footer */
+    .plyr--video .plyr__controls {
+        margin-bottom: 4rem;
+    }
+}
