@@ -1,0 +1,12 @@
+$filename(js,utf-8) $loop(%_filename_ext%) $puts(TotalCount,%_counter%) $loopend()
+var tracklistAudio = '['$loop(%_filename_ext%)
+	{
+		fileName    : ''%_filename_ext%'',
+		trackNumber : %track%,
+		artistName  : ''%artist%'',
+		trackTitle  : ''%title%'',
+		albumName   : ''%album%'',
+		trackYear   : ''%year%'',
+		trackLength : ''%_length%'',
+	}$if2($eql(%_counter%,$get(TotalCount)),',')$loopend()
+']';
